@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+  font-size: 10px;
+  background-color: #5C678B;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: right;
+  padding: 5% 0;
+}
+
+header a {
+  font-size: 2.2em;
+  margin-left: 2%;
+}
+
+section {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+  transition: .3s;
+  margin: 0 auto;
+  padding: 1em 3em;
+  font-size: 1.8em;
+}
+
+section:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.5);
+}
+
+.section__title {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.about{
+  height: 100%;
+  background-color: #BD97BE;
+}
+
+.section__about--photo-text{
+  display: flex;
+}
+
+.section__about--photo-text img{
+  margin-right: 5%;
+}
+
+.section__about--edu-job-container{
+  height: 400px;
+  display: flex;
+  margin: 2em 0em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section__about-edu{
+  min-width: 50%;
+}
+
+.section__about-job{
+  min-width: 50%;
+}
+
+.edu-list > li:not(:last-child)::before{
+  content: '';
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 35px;
+  width: 2px;
+  height: 15%;
+  background: white;
+}
+
+.edu-list-icon{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.edu-list-text{
+  display: inline-block;
+  margin-top: 1em;
+  margin-left:2em;
+  width: 65%;
+}
+
+.edu-list-text-title{
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
