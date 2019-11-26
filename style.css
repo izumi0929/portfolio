@@ -50,6 +50,11 @@ html {
     height: 100%;
     background-color: #BD97BE;
   }
+
+  .works{
+    height: 100%;
+    background-color: #BDBE97;
+  }
   
   .section__about--photo-text{
     display: block;
@@ -82,13 +87,11 @@ html {
     width: 10%;
   }
   
-  .edu-list > li:not(:last-child)::before{
+  .edu-list-content::before{
     content: '';
     position: absolute;
-    margin-top: 20px;
-    margin-left: 14px;
     width: 2px;
-    height: 29%;
+    height: 100%;
     background: white;
   }
 
@@ -133,6 +136,7 @@ html {
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
     transition: .3s;
     margin: 0 auto;
+    margin-bottom: 10%;
     padding: 1em 3em;
     font-size: 1.8em;
   }
@@ -150,6 +154,12 @@ html {
     height: 100%;
     background-color: #BD97BE;
   }
+
+  .works{
+    height: 100%;
+    background-color: #BDBE97;
+  }
+  
   
   .section__about--photo-text{
     display: flex;
@@ -204,6 +214,10 @@ html {
     padding: 1em 0em;
     font-size: 1.2em;
     font-weight: 700;
+  }
+
+  .works--image {
+    text-align: center;
   }
 }
 
