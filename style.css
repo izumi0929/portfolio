@@ -49,13 +49,19 @@ html {
   .about{
     height: 100%;
     background-color: #BD97BE;
+    margin-bottom: 5%;
   }
 
   .works{
     height: 100%;
     background-color: #BDBE97;
+    margin-bottom: 5%;
   }
   
+  .works--image {
+    text-align: center;
+  }
+
   .section__about--photo-text{
     display: block;
   }
@@ -91,7 +97,9 @@ html {
     content: '';
     position: absolute;
     width: 2px;
-    height: 100%;
+    margin-left: 4%;
+    margin-top: 10%;
+    height: 30%;
     background: white;
   }
 
