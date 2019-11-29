@@ -2,12 +2,28 @@ html, body {
   margin: 0;
   padding: 0;
   color: white;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'YuGothic', sans-serif;
 }
 
 html {
   font-size: 10px;
   background-color: #5C678B;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+header a {
+  font-size: 2.2em;
+  margin-left: 2%;
+  font-weight: 700;
 }
 
 @media screen and (max-width:480px){
@@ -25,11 +41,6 @@ html {
     background-color: #5C678B;
   }
   
-  header a {
-    font-size: 2.2em;
-    margin-left: 2%;
-  }
-  
   article {
     margin-top: 30%;
   }
@@ -39,11 +50,6 @@ html {
     margin: 0 auto;
     padding: 1em;
     font-size: 1.8em;
-  }
-  
-  .section__title {
-    font-size: 2em;
-    font-weight: 700;
   }
   
   .about{
@@ -118,6 +124,9 @@ html {
     font-weight: 700;
   }
 
+  .section__works--description{
+    display: block;
+  }
 
 
 
@@ -227,5 +236,25 @@ html {
   .works--image {
     text-align: center;
   }
+
+  .section__works{
+    display: inline;
+
+  }
+
+  .section__works--description-left{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 40%;
+    margin-right: 8%;
+  }  
+  
+  .section__works--description-right{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 8%;
+  }
+
 }
 
