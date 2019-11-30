@@ -37,33 +37,61 @@ h3 {
 
 .about{
   height: 100%;
-  background-color: #BD97BE;
+  background-color: #b0aac2;
   margin-bottom: 5%;
 }
 
 .works{
   height: 100%;
-  background-color: #BDBE97;
+  background-color: #f2efe8;
+  color: #333;
   margin-bottom: 5%;
+
 }
 
 .skills{
   height: 100%;
-  background-color: #97BEA9;
+  background-color: #c2d4d8;
   margin-bottom: 5%;
 }
 
 .contact{
   height: 100%;
-  background-color: #BE9797;
+  background-color: #dbe9d8;
   padding-bottom: 5%;
+  color: #333;
   margin-bottom: 5%;
 }
 
 .skills-logo{
   display: block;
   width: 60%;
-  margin: 0 auto;
+  margin: 10% auto;
+}
+
+a.header{
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px;
+  padding: 10px 10px 10px;
+  position: relative;
+}
+
+a.header::after {
+  background-color: #efefef; 
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 50px;
+}
+
+a:hover{
+  color: #FCC2C2;
+  text-decoration: none;
 }
 
 @media screen and (max-width:480px){
@@ -334,6 +362,10 @@ h3 {
 
   .section--contact__logo {
     margin-top: 2em;
+  }
+
+  footer{
+    text-align: center;
   }
 
 }
