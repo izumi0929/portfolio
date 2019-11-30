@@ -9,17 +9,18 @@
   <body>
     <header>
       <nav>
-        <a>HOME</a>
-        <a>ABOUT</a>
-        <a>WORKS</a>
-        <a>SKILLS</a>
-        <a>CONTACT</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </header>
     <main>
       <article>
+        <a id="about" class="anchor"></a>
         <section class="about">
-          <h1>ABOUT | 自己紹介</h1>
+          <h2>ABOUT | 自己紹介</h2>
           <div class="section__about--photo-text">
             <img src="izumi.svg" alt="izumi's photo"/>
             <span>ここに文字がはいります。自己紹介の文章です。
@@ -86,31 +87,58 @@
           </div>
           
         </section>
+        <a id="works" class="anchor"></a>
         <section class="works">
-            <h1>WORKS | 成果物</h1>
+            <h2>WORKS | 成果物</h2>
             <div class="works--image">
               <img src="unicom-thumbnail.svg">
             </div>
             <div class="section--works">
-              <h2>ECサイト開発</h2>
+              <h3>ECサイト開発</h3>
               <div class="section__works--description-left">
                 <p>2019/07~</p>
                 <p>コーヒーショップのためのECサイト開発に参画。<br>
-                   ４人チームのフロントエンドエンジニアとして携わる。
+                  ４人チームのフロントエンドエンジニアとして携わる。
                 </p>
               </div>
               <div class="section__works--description-right">
                 <p>使用言語・フレームワーク・ライブラリ</p>
-                <p>Vue.js<br>
-                   Vuex<br>
-                   Vuetify
-                </p>
+                <ul>
+                  <li>Vue.js</li>
+                  <li>Vuex</li>
+                  <li>Vuetify</li>
+                </ul>
               </div>
-
             </div>
             
             
-          </section>
+        </section>
+        <a id="skills" class="anchor"></a>
+        <section class="skills">
+          <h2>SKILLS|言語</h2>
+          <div class="section__skills--container">
+            <div class="skills-item">
+              <img src="logo-vue.svg">
+              <hr>
+              <p>2019/07~<br>ECサイト開発</p>
+            </div>
+            <div class="skills-item">
+                <img src="logo-html.svg" class="skills-logo">
+                <hr>
+                <p>2019/11~<br>ポートフォリオ作成</p>
+            </div>
+            <div class="skills-item">
+                <img src="logo-css.svg" class="skills-logo">
+                <hr>
+                <p>2019/11~<br>ポートフォリオ作成</p>
+            </div>
+            <div class="skills-item">
+                <img src="logo-python.svg" class="skills-logo">
+                <hr>
+                <p>2019/04~<br>テスト自動化</p>
+            </div>
+          </div>
+        </section>
       </article>
     </main>
     <footer></footer>

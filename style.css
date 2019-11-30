@@ -10,20 +10,37 @@ html {
   background-color: #5C678B;
 }
 
-h1 {
+h2 {
   font-size: 2em;
   font-weight: 700;
 }
 
-h2 {
+h3 {
   font-size: 1.5em;
   font-weight: 400;
 }
 
-header a {
-  font-size: 2.2em;
-  margin-left: 2%;
-  font-weight: 700;
+.about{
+  height: 100%;
+  background-color: #BD97BE;
+  margin-bottom: 5%;
+}
+
+.works{
+  height: 100%;
+  background-color: #BDBE97;
+  margin-bottom: 5%;
+}
+
+.skills{
+  height: 100%;
+  background-color: #97BEA9;
+}
+
+a.anchor{
+  display: block;
+  padding-top: 0.1em;
+  margin-top: -0.1em;
 }
 
 @media screen and (max-width:480px){
@@ -39,6 +56,13 @@ header a {
     padding: 5% 0;
     margin-bottom: 5%;
     background-color: #5C678B;
+    text-align: center;
+  }
+
+  header a {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0.2em;
   }
   
   article {
@@ -47,22 +71,13 @@ header a {
 
   section {
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
-    margin: 0 auto;
-    padding: 1em;
-    font-size: 1.8em;
+    transition: .3s;
+    margin: 2em auto;
+    padding: 0.1em 1.5em;
+    font-size: 1.3em;
   }
   
-  .about{
-    height: 100%;
-    background-color: #BD97BE;
-    margin-bottom: 5%;
-  }
 
-  .works{
-    height: 100%;
-    background-color: #BDBE97;
-    margin-bottom: 5%;
-  }
   
   .works--image {
     text-align: center;
@@ -99,7 +114,7 @@ header a {
     width: 10%;
   }
   
-  .edu-list-content::before{
+  /* .edu-list-content::before{
     content: '';
     position: absolute;
     width: 2px;
@@ -107,7 +122,7 @@ header a {
     margin-top: 10%;
     height: 30%;
     background: white;
-  }
+  } */
 
   .edu-list-text{
     margin-top: 0;
@@ -128,7 +143,23 @@ header a {
     display: block;
   }
 
+  .section__skills--container{
+    padding: 2.5% 0;
+    display: inline-block;
+    flex-direction: row;
+  }
 
+  .skills-item{
+    display: inline-block;
+    margin-right: 6%;
+  }
+
+
+  .skills-logo{
+  }
+
+  .skills-description{
+  }
 
 }
 @media screen and (min-width:781px){
@@ -166,18 +197,7 @@ header a {
     font-size: 2.2em;
     font-weight: 700;
   }
-  
-  .about{
-    height: 100%;
-    background-color: #BD97BE;
-  }
 
-  .works{
-    height: 100%;
-    background-color: #BDBE97;
-  }
-  
-  
   .section__about--photo-text{
     display: flex;
   }
@@ -254,6 +274,17 @@ header a {
     display: inline-block;
     max-width: 40%;
     margin-left: 8%;
+  }
+
+  .section__skills--container{
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .skills-item{
+    display: inline-block;
   }
 
 }
