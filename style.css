@@ -15,21 +15,6 @@ h2 {
   font-weight: 700;
 }
 
-/* h2.section--title__about{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(143, 114, 143);
-}
-
-h2.section--title__works{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(149, 150, 119);
-}
-
-h2.section--title__skills{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(122, 153, 136);
-} */
-
 h3 {
   font-size: 1.5em;
   font-weight: 400;
@@ -76,8 +61,6 @@ a {
 a.header{
   color: white;
   text-decoration: none;
-  margin: 10px 10px 10px;
-  padding: 10px 10px 10px;
   position: relative;
   transition-duration: .6s;
 }
@@ -114,6 +97,8 @@ a.header:hover:after{
 @media screen and (max-width:480px){
   /*画面幅が480pxまでの時*/
 
+  
+
   body {
     width: 90%;
     margin: 0 auto;
@@ -129,8 +114,20 @@ a.header:hover:after{
 
   header a {
     font-size: 1.5em;
-    font-weight: 700;
+    padding: 10px 0px;
     margin: 0 0.2em;
+  }
+
+  a.header:hover:after{
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 30px;
+    background-color: #FCC2C2;
   }
   
   article {
@@ -254,6 +251,8 @@ a.header:hover:after{
   }
   
   header a {
+    margin: 10px 10px;
+    padding: 10px 10px;
     font-size: 2.2em;
     margin-left: 2%;
   }
