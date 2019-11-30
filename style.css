@@ -69,16 +69,21 @@ h3 {
   margin: 10% auto;
 }
 
+a {
+  color: white;
+}
+
 a.header{
   color: white;
   text-decoration: none;
   margin: 10px 10px 10px;
   padding: 10px 10px 10px;
   position: relative;
+  transition-duration: .6s;
 }
 
-a.header::after {
-  background-color: #efefef; 
+/* a.header::after {
+  background-color: white; 
   bottom: 0;
   content: '';
   display: block;
@@ -87,11 +92,23 @@ a.header::after {
   position: absolute;
   transform: translate(-50%,0);
   width: 50px;
-}
+} */
 
 a:hover{
   color: #FCC2C2;
   text-decoration: none;
+}
+
+a.header:hover:after{
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 50px;
+  background-color: #FCC2C2;
 }
 
 @media screen and (max-width:480px){
