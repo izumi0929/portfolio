@@ -15,6 +15,21 @@ h2 {
   font-weight: 700;
 }
 
+/* h2.section--title__about{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(143, 114, 143);
+}
+
+h2.section--title__works{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(149, 150, 119);
+}
+
+h2.section--title__skills{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(122, 153, 136);
+} */
+
 h3 {
   font-size: 1.5em;
   font-weight: 400;
@@ -35,12 +50,20 @@ h3 {
 .skills{
   height: 100%;
   background-color: #97BEA9;
+  margin-bottom: 5%;
 }
 
-a.anchor{
+.contact{
+  height: 100%;
+  background-color: #BE9797;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+}
+
+.skills-logo{
   display: block;
-  padding-top: 0.1em;
-  margin-top: -0.1em;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width:480px){
@@ -76,9 +99,7 @@ a.anchor{
     padding: 0.1em 1.5em;
     font-size: 1.3em;
   }
-  
 
-  
   .works--image {
     text-align: center;
   }
@@ -144,21 +165,33 @@ a.anchor{
   }
 
   .section__skills--container{
-    padding: 2.5% 0;
-    display: inline-block;
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .skills-item{
     display: inline-block;
-    margin-right: 6%;
-  }
-
-
-  .skills-logo{
   }
 
   .skills-description{
+  }
+
+  a.anchor{
+    display: block;
+    padding-top: 0.1em;
+    margin-top: -0.1em;
+  }
+
+  .section--contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .section--contact__logo {
+    margin-top: 2em;
+    width: 15%;
   }
 
 }
@@ -277,14 +310,30 @@ a.anchor{
   }
 
   .section__skills--container{
-    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills-item{
+    display: inline-block;
+    width: 162px;
+  }
+
+  a.anchor{
+    display: block;
+    padding-top: 1em;
+    margin-top: -1em;
+  }
+
+  .section--contact__container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .skills-item{
-    display: inline-block;
+  .section--contact__logo {
+    margin-top: 2em;
   }
 
 }
