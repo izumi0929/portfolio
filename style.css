@@ -30,7 +30,21 @@ h3 {
   background-color: #f2efe8;
   color: #333;
   margin-bottom: 5%;
+}
 
+.works-container {
+  border-width: thin;
+  border-bottom: solid #c9c6c1;
+  padding-bottom: 2em;
+  margin-bottom:  4em;
+}
+
+.works--image-container {
+  text-align: center;
+}
+
+.works--image {
+  max-width: 30%;
 }
 
 .skills{
@@ -162,10 +176,6 @@ a.header:hover:after{
     font-size: 1.3em;
   }
 
-  .works--image {
-    text-align: center;
-  }
-
   .section__about--photo-text{
     display: block;
   }
@@ -251,9 +261,13 @@ a.header:hover:after{
     justify-content: space-evenly;
   }
 
+  .section--contact__link{
+    min-width: 15%;
+  }
+
   .section--contact__logo {
     margin-top: 2em;
-    width: 15%;
+    width: 100%;
   }
 
 }
@@ -262,6 +276,10 @@ a.header:hover:after{
 
   body {
     margin: 0 auto;
+  }
+
+  nav {
+    padding-right: 15%;
   }
   
   header a {
@@ -338,10 +356,6 @@ a.header:hover:after{
     padding: 1em 0em;
     font-size: 1.2em;
     font-weight: 700;
-  }
-
-  .works--image {
-    text-align: center;
   }
 
   .section__works{
