@@ -46,6 +46,7 @@ h3 {
 
 .works--image {
   max-width: 30%;
+  margin-bottom: 3em;
 }
 
 .hidden-container label {
@@ -66,7 +67,7 @@ h3 {
 }
 
 .hidden-container label:hover {
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px #afaba4;
 }
 
 .hidden-container input {
@@ -99,6 +100,7 @@ h3 {
   transform: rotate(180deg);
 }
 
+
 .skills{
   height: 100%;
   background-color: #6d8a91;
@@ -119,8 +121,12 @@ h3 {
   margin: 10% auto;
 }
 
-a {
+a.link-white {
   color: white;
+}
+
+a.link-black {
+  color: black;
 }
 
 a.header{
