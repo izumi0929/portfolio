@@ -1,3 +1,4 @@
+
 html, body {
   padding: 0;
   color: white;
@@ -45,6 +46,57 @@ h3 {
 
 .works--image {
   max-width: 30%;
+}
+
+.hidden-container label {
+  text-align: center;
+  display: block;
+  margin: 2em auto;
+  padding: 15px;
+  font-weight: bold;
+  cursor :pointer;
+}
+
+.hidden-container label:before {
+  display: inline-block;
+  content: '\f078';
+  font-family: 'FontAwesome';
+  padding-right: 5px;
+  transition: 0.2s;
+}
+
+.hidden-container label:hover {
+  text-shadow: 1px 1px 1px black;
+}
+
+.hidden-container input {
+  display: none;
+}
+
+.hidden-container .test-automation{
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.hidden-container .see-more::after{
+  content: "もっとみる";
+
+}.hidden-container input:checked ~ .see-more::after{
+  content: "とじる";
+}
+
+.hidden-container input:checked ~ .test-automation{
+  height: auto;
+  opacity: 1;
+}
+
+.hidden-container input:checked ~ label:before{
+  content: '\f078';
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .skills{
