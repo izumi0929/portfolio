@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #5C678B;
+  background: radial-gradient(circle, rgba(235,200,215,1) 0%, rgba(97,127,162,1) 100%);
 }
 
 h2 {
@@ -22,7 +22,7 @@ h3 {
 
 .about{
   height: 100%;
-  background-color: #958dad;
+  background-color: #646ea3;
   margin-bottom: 5%;
 }
 
@@ -47,6 +47,10 @@ h3 {
 .works--image {
   max-width: 30%;
   margin-bottom: 3em;
+}
+
+#artwork-background-maker{
+  max-width: 80%;
 }
 
 .hidden-container label {
@@ -143,6 +147,7 @@ header{
   position: fixed;
   z-index: 100;
   background-color: rgb(89, 92, 104);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
 }
 
 #wrapper {
@@ -160,18 +165,6 @@ footer {
   bottom: 0; /*下に固定*/
   background-color: rgb(89, 92, 104);
 }
-
-/* a.header::after {
-  background-color: white; 
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 3px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%,0);
-  width: 50px;
-} */
 
 a:hover{
   color: #FCC2C2;
@@ -264,16 +257,6 @@ a.header:hover:after{
     vertical-align: top;
     width: 10%;
   }
-  
-  /* .edu-list-content::before{
-    content: '';
-    position: absolute;
-    width: 2px;
-    margin-left: 4%;
-    margin-top: 10%;
-    height: 30%;
-    background: white;
-  } */
 
   .edu-list-text{
     margin-top: 0;
