@@ -1,0 +1,139 @@
+@media screen and (min-width:781px){
+  /*画面幅が781px以上の時*/
+
+  body {
+    margin: 0 auto;
+  }
+
+  nav {
+    padding-right: 15%;
+  }
+  
+  header a {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    font-size: 2.2em;
+    margin-left: 2%;
+  }
+
+  main {
+    width: 70%;
+    padding-top: 10%;
+    margin: 0% auto;
+  }
+  
+  section {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+    transition: .3s;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    padding: 1em 3em;
+    font-size: 1.8em;
+  }
+  
+  section:hover {
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  .section__title {
+    font-size: 2.2em;
+    font-weight: 700;
+  }
+
+  .section__about--photo-text{
+    display: flex;
+  }
+  
+  .section__about--photo-text img{
+    margin-right: 5%;
+  }
+  
+  .section__about--edu-job-container{
+    display: flex;
+    margin: 2em 0em;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .section__about-edu{
+    min-width: 50%;
+  }
+  
+  .section__about-job{
+    min-width: 50%;
+  }
+  
+  .edu-list-icon{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .edu-list-text{
+    display: inline-block;
+    margin-top: 1em;
+    margin-left:2em;
+    width: 65%;
+  }
+  
+  .edu-list-text-title{
+    display: block;
+    padding: 1em 0em;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .section__works{
+    display: inline;
+
+  }
+
+  .section__works--description-left{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 40%;
+    margin-right: 8%;
+  }  
+  
+  .section__works--description-right{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 8%;
+  }
+
+  .section__skills--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills-item{
+    display: inline-block;
+    width: 162px;
+  }
+
+  a.anchor{
+    display: block;
+    padding-top: 10%;
+    margin-top: -10%;
+  }
+
+  .section--contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .section--contact__logo {
+    margin-top: 2em;
+  }
+
+  footer{
+    display: none;
+  }
+
+}
+

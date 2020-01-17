@@ -4,7 +4,9 @@
     <title>Izumi's Portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Nunito|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="style-common.css" rel="stylesheet">
+    <link href="style-large.css" rel="stylesheet">
+    <link href="style-small.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ddecb096b8.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -117,6 +119,32 @@
                 </div>
               </div>
             </div>
+            <div class="works-container">
+              <div class="works--image-container">
+                <img class="works--image gif" src="expense-calendar.gif">
+              </div>
+            <div class="section--works gif">
+              <h3>家計簿カレンダーアプリ</h3>
+              <div class="section__works--description-left">
+                <p>2019/1~</p>
+                <p>３年以上エクセルで家計簿をつけていましたが、
+                  記入しづらく、また見づらかったのでJSの練習もかねて
+                  自分で作ってみることにしました。日々更新中です。<br>
+                  <a href="https://monthly-expense-calendar-f49f3.firebaseapp.com/">
+                    ぜひ使ってみてください</a>
+                </p>
+              </div>
+              <div class="section__works--description-right">
+                <p>使用言語・フレームワーク・ライブラリ・ツール</p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Firebase(Realtime Database)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
             <div class="hidden-container">
               <input type="checkbox" id="show-switch">
               <label class="see-more" for="show-switch"></label>
@@ -146,7 +174,7 @@
               </div>
               <div class="hidden-work code-pen">
                 <div class="works--image-container">
-                  <img class="works--image" src="artwork-background-maker.gif" id="artwork-background-maker">
+                  <img class="works--image gif" src="artwork-background-maker.gif">
                 </div>
                 <div class="works-container section--works">
                   <h3>CodePen</h3>

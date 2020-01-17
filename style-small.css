@@ -1,0 +1,124 @@
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+
+  body {
+    margin: 0 auto;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+    padding-top: 2%;
+    margin: 0% auto;
+    padding-bottom: 10%;
+  }
+
+  footer a {
+    font-size: 1.5em;
+    padding: 10px 0px;
+    margin: 0 0.2em;
+  }
+
+  a.footer:hover:after{
+    background-color: #FCC2C2;
+  }
+  
+  article {
+    margin-top: 10%;
+  }
+
+  section {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.5);
+    transition: .3s;
+    margin: 2em auto;
+    padding: 0.1em 1.5em;
+    font-size: 1.3em;
+  }
+
+  .section__about--photo-text{
+    display: block;
+  }
+  
+  .section__about--photo-text img{
+    display: block;
+    margin: 2em auto;
+  }
+  
+  .section__about--edu-job-container{
+    margin: 2em 0em;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .section__about-edu{
+    display: flex;
+  }
+  
+  .section__about-job{
+  }
+  
+  .edu-list-icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+  }
+
+  .edu-list-text{
+    margin-top: 0;
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+  }
+  
+  .edu-list-text-title{
+    display: block;
+    padding-top: 0.5em;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+  .section__works--description{
+    display: block;
+  }
+
+  .section__skills--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .skills-item{
+    display: inline-block;
+  }
+
+  .skills-description{
+  }
+
+  a.anchor{
+    display: block;
+    padding-top: 0.1em;
+    margin-top: -0.1em;
+  }
+
+  .section--contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .section--contact__link{
+    min-width: 15%;
+  }
+
+  .section--contact__logo {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
